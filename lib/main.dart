@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_layouts/boxes.dart';
+import 'package:flutter_layouts/column_button.dart';
 
 void main() => runApp(new MyApp());
 
@@ -82,9 +83,9 @@ class HomeWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          buildButtonColumn(Icons.call, 'CALL'),
-          buildButtonColumn(Icons.near_me, 'ROUTE'),
-          buildButtonColumn(Icons.share, 'SHARE')
+          ColumnButton(icon: Icons.call, label: 'CALL'),
+          ColumnButton(icon: Icons.near_me, label: 'ROUTE'),
+          ColumnButton(icon: Icons.share, label: 'SHARE'),
         ],
       ),
     );
